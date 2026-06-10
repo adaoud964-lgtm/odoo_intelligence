@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_demand_forecasting_tree" model="ir.ui.view">
+        <name>demand.forecasting.tree</name>
+        <model>demand.forecasting</model>
+        <arch type="xml">
+            <tree string="Decision Intelligence Dashboards">
+                <field name="target_date"/>
+                <field name="predicted_demand_qty"/>
+                <field name="suggested_dynamic_price"/>
+                <field name="governance_decision" decoration-success="governance_decision == 'approved'" decoration-warning="governance_decision == 'review'"/>
+            </tree>
+        </arch>
+    </record>
+
+    <record id="action_demand_forecasting" model="ir.actions.act_window">
+        <name>Demand Forecasting Engine</name>
+        <type>ir.actions.act_window</type>
+        <res_model>demand.forecasting</res_model>
+        <view_mode>tree,form</view_mode>
+    </record>
+</odoo>

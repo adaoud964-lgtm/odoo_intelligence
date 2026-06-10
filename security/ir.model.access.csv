@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_demand_forecasting_cio,access_demand_forecasting_cio,model_demand_forecasting,base.group_user,1,1,1,1
